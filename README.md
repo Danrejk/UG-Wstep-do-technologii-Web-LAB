@@ -1,0 +1,1 @@
+# WIKTOR JERYŚ
