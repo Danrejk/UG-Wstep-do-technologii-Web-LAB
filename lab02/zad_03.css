@@ -1,0 +1,19 @@
+.A {
+    color: blue;
+}
+
+.B {
+    color: green
+}
+
+.A.B {
+    color: red;
+}
+
+.A>.B {
+    color: orange
+}
+
+.A>div>.B {
+    color: purple;
+}

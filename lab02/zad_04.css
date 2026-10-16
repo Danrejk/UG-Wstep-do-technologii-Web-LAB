@@ -1,0 +1,22 @@
+body > ul > li > ul{
+    font-weight:bold;
+}
+
+body > ul > li > ul > li > ul{
+    font-weight:normal;
+}
+
+body > ul {
+    color: red;
+    list-style-type:decimal;
+}
+
+body > ul > li > ul{
+    color: green;
+    list-style-type: lower-latin;
+}
+
+body > ul > li > ul > li > ul{
+    color: blue;
+    list-style-type: square;
+}
