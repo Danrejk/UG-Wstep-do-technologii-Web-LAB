@@ -1,0 +1,29 @@
+.box {
+    font-family: Arial;
+    background-color: lightgray;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.bialy-czarny {
+    border: black solid 1px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.szary-bialy {
+    padding: 10px;
+    background-color: lightgray;
+    border: white solid 5px;
+    margin: 10px;
+}
+
+.szary-czarny {
+    background-color: lightgray;
+    padding: 10px;
+    border: black solid 1px;
+    margin: 10px;
+}

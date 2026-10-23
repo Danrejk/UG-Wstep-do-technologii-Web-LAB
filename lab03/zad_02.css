@@ -1,0 +1,14 @@
+.box {
+    font-family: Arial;
+    background-color: lightgray;
+    border: black solid 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box-content{
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    border: white solid 5px;
+}

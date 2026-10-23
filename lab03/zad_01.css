@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nazwa {
+    background-color: lightblue;
+    border: 5px dotted darkslategrey;
+    width: 250px;
+    padding: 1em;
+    margin: 1em;
+    
+}
+
+h2, p {
+    margin: 1em;
+}

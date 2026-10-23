@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana;
+    background-color: #ececec;
+}
+
+header {
+    text-align: center;
+    background-color: #e8e2d9;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px #a5a5a5;
+}
+
+.section {
+    background-color: #f7f3f3;
+    width: 75%;
+    margin: auto;
+    box-shadow: 0px 0px 10px #a5a5a5;
+    padding: 1rem;
+    margin-top: 2rem
+}
+
+.form-group {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+fieldset > legend{
+    color: #8e8a83;
+    letter-spacing: 0.15em;
+    margin-left: 1em;
+    padding: 1em;
+    font-size: large;
+}
+
+.button {
+    text-align: right;
+}
+
+.button > button{
+    background-color: #c4beb6;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+input{
+    border: #e9e4dc solid 1px;
+    width: 25rem;
+    height: 1.5rem;
+    margin: 0.25rem;
+    margin-left: 1rem;
+}
+
