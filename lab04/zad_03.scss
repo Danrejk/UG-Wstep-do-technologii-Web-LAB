@@ -1,0 +1,19 @@
+*{
+    margin: 0
+}
+
+.info{
+    width: 800px;
+    background-color: lightcyan;
+    padding: 16px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    font-family: Arial;
+    position: relative;
+
+    &>.close{
+        position: absolute;
+        color: red;
+        right: 16px;
+    }
+}
