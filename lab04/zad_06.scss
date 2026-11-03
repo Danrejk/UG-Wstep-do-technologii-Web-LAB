@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+  background-color: #464646;
+}
+
+main {
+  /* Szerokość głównej zawartości strony - zdjęć i opisu */
+  width: 1100px;
+}
+
+nav{
+    background-color: #2f2f2f;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 300px;
+
+    .tytul{
+        font-size: xx-large;
+        text-align: center;
+
+        &>span:nth-child(1){
+            color: white;
+        }
+        &>span:nth-child(2){
+            color: orangered;
+        }
+    }
+
+    .podtytul{
+        font-size: larger;
+        text-align: center;
+        color: gray;
+    }
+
+    .pages{
+        position: relative;
+        right: 0;
+        width: 100px;
+    }
+}
