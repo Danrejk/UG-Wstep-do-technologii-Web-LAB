@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;       
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#outer{
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    width: 160px;
+    height: 160px;
+    font-size: 50px;
+    padding: 16px;
+    color: white;
+    text-align: center;
+
+    &:nth-of-type(1){
+        background-color: lightgray;
+    }
+    &:nth-of-type(2){
+        background-color: gray;
+    }
+    &:nth-of-type(3){
+        background-color: darkgray;
+    }
+}

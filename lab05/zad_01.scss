@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.box{
+    height: 100vh;
+    flex: 1;
+    padding: 16px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    text-shadow: 2px 1px 5px black;
+    box-sizing: border-box;
+
+    $colors: whitesmoke, violet, yellow, yellowgreen, turquoise, thistle, teal, tan, wheat, tomato; 
+
+    @for $i from 1 through 10{
+        &:nth-child(#{$i}){
+            background-color: nth($colors,$i);
+        }
+    }
+}
