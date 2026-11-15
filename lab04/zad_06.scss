@@ -7,46 +7,115 @@ body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   letter-spacing: 0.8px;
   background-color: #464646;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 main {
   /* Szerokość głównej zawartości strony - zdjęć i opisu */
   width: 1100px;
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  align-items: center;
+  align-self: center;
+
+  .column{
+    flex: 1;
+    height: 65%;
+  }
+
+  img{
+    border: #2f2f2f 20px solid;
+    &:nth-of-type(1){
+        height: 400px;
+        position: relative;
+    }  
+    &:nth-of-type(2){
+        width: 400px;
+        position: relative;
+        left: 300px;
+        bottom: 300px;
+        margin-bottom: -300px;
+    }  
+  }
+
+  .images-text{
+    font-size: 50px;
+    letter-spacing: 25px;
+    color: white;
+    position: relative;
+  }
+
+  .desc-container{
+    width: 60%;
+    float: right;
+    position: relative;
+    top: 50px;
+    line-height: 30px;
+    .desc{
+        color: gray;
+    }
+    .desc-expand{
+        color: white;
+    }
+  }
+  
+
 }
 
 nav{
     background-color: #2f2f2f;
     padding: 16px;
-    position: fixed;
     width: 100%;
-}
+    box-sizing: border-box;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
 
-.logo{
+    .logo{
     text-transform: uppercase;
     font-weight: bold;
     width: 300px;
 
-    .tytul{
-        font-size: xx-large;
-        text-align: center;
+        .tytul{
+            font-size: xx-large;
+            text-align: center;
 
-        &>span:nth-child(1){
-            color: white;
+            &>span:nth-child(1){
+                color: white;
+            }
+            &>span:nth-child(2){
+                color: orangered;
+            }
         }
-        &>span:nth-child(2){
-            color: orangered;
-        }
-    }
 
-    .podtytul{
-        font-size: larger;
-        text-align: center;
-        color: gray;
+        .podtytul{
+            font-size: larger;
+            text-align: center;
+            color: gray;
+        }
+
+        .pages{
+            position: relative;
+            right: 0;
+            width: 100px;
+        }
     }
 
     .pages{
-        position: relative;
-        right: 0;
-        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        span{
+            text-transform: uppercase;
+            color: gray;
+
+            &:nth-of-type(1){
+                color: white;
+            }
+        }
     }
 }
