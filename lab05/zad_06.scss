@@ -14,4 +14,97 @@ header {
   background-size: cover;
   background-position: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 400px;
+
+  
+    .nav{
+        position: fixed;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        padding: 10px;
+        z-index: 1;
+
+        .header{
+            position: absolute;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        .nav-items{
+            width: 75%;
+            display: flex;
+            justify-content: space-around;
+            font-size: x-large;
+            margin: auto;
+        }
+    }
+
+    .box{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        top: 200px;
+        gap: 30px;
+        
+        .title{
+            font-size: 35px;
+            font-weight: bolder;
+        }
+    }
+}
+
+.items{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 1000px;
+    margin: auto;
+
+    .item{
+        grid-column: span 2;
+        box-shadow: black 1px 1px 5px;
+        margin: 10px;
+
+        .image{
+            background-color: olive;
+            width: 100%;
+            height: 200px;
+            position: relative;
+
+            .date{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin: 10px;
+                color: white;
+                font-size: x-small;
+            }
+        }
+
+        .title{
+            font-weight: bold;
+            font-size: large;
+            padding: 20px;
+            padding-bottom: 0px;
+        }
+
+        .description{
+            padding: 20px;
+            word-spacing: 10px;
+            font-size: small;
+        }
+
+        &:nth-last-child(2){
+            grid-column: span 3;
+        }
+        &:nth-last-child(1){
+            grid-column: span 3;
+        }
+    }
 }
