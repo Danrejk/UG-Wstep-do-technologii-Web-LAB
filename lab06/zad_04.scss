@@ -1,0 +1,27 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: lightgray;
+}
+
+nav{
+    box-shadow: 5px 1px 5px gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .logo{
+        font-size: 30px;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        width: 500px;
+    }
+}

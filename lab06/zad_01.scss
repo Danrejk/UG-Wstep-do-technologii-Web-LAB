@@ -1,0 +1,25 @@
+.content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 500px;
+    width: 500px;
+    border: solid 1px black;
+
+    .color-plane{
+        border: solid 1px black;
+        color: white;
+        font-size: large;
+        padding: 10px;
+        text-shadow: 2px 2px 2px black;
+
+        &:nth-child(even){
+            background-color: burlywood;
+        }
+
+        &:nth-child(odd){
+            background-color: blanchedalmond;
+        }
+    }
+}
+
